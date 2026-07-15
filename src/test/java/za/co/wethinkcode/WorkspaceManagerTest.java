@@ -4,9 +4,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import za.co.wethinkcode.model.*;
 import za.co.wethinkcode.service.WorkspaceManager;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class WorkspaceManagerTest {
+
     private WorkspaceManager manager;
     private DayPassCoworker dayPass;
     private ResidentCoworker resident;
@@ -14,15 +16,14 @@ class WorkspaceManagerTest {
     @BeforeEach
     void setUp() {
         manager = new WorkspaceManager("Jozi Tech Hub");
-        // NOTE: These constructors will show errors until the students create the classes!
         dayPass = new DayPassCoworker("John", "Doe", "john@email.com", "C001");
         resident = new ResidentCoworker("Jane", "Smith", "jane@email.com", "C002", "Desk-42");
     }
 
     @Test
     void revenueCalculatesCorrectly() {
-        manager.registerCoworker(dayPass); // R250
-        manager.registerCoworker(resident); // R3500
+        manager.registerCoworker(dayPass);
+        manager.registerCoworker(resident);
         assertEquals(3750.00, manager.calculateTotalRevenue(), 0.001);
     }
 

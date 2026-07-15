@@ -1,0 +1,14 @@
+Question 1 — OOP Pillars
+[Your answer here]
+
+Question 2 — Testing & TDD
+[Your answer here]
+
+Question 3 — Brownfields Engineering
+[Your answer here]
+
+Question 4 — Agile Methodology
+[Your answer here]
+
+Question 5 — Systems Design
+[Your answer here]
